@@ -1,227 +1,228 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Vue基础命令12345初始化配置 npm i安装脚手架 npm install -g @vue&#x2F;cli创建项目 vue create + name可视化创建 vue ui    配置配置Axios123456789101112npm i axios -D&#x2F;&#x2F;引入axiosimport axios from &amp;#x27;axios&amp;#x27;&#x2F;&#x2F;axios基础地址axios.defaults.ba">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2022/08/25/%E7%AC%94%E8%AE%B0/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Vue基础命令12345初始化配置 npm i安装脚手架 npm install -g @vue&#x2F;cli创建项目 vue create + name可视化创建 vue ui    配置配置Axios123456789101112npm i axios -D&#x2F;&#x2F;引入axiosimport axios from &amp;#x27;axios&amp;#x27;&#x2F;&#x2F;axios基础地址axios.defaults.ba">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-08-25T05:23:41.506Z">
-<meta property="article:modified_time" content="2022-08-25T04:49:58.932Z">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-<meta name="generator" content="Hexo 6.2.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <title>Hexo</title>
+        <meta name="author" content="John Doe">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="icon" href="">
+        <script src="https://cdn.staticfile.org/instant.page/5.1.0/instantpage.min.js" type="module"></script>
+        <script src="https://cdn.staticfile.org/font-awesome/6.1.1/js/all.min.js"></script>
+        
+        <link rel="stylesheet" href="/css/fonts.min.css">
+        <link rel="stylesheet" href="/css/particlex.css">
+        
+        <script src="https://cdn.staticfile.org/vue/3.2.33/vue.global.prod.min.js"></script>
+    <meta name="generator" content="Hexo 6.2.0"></head>
+    <body>
+        <div id="loading" style="height:100vh;width:100vw;position:fixed;display:flex;z-index:200;justify-content:space-between;background:#fff;transition:opacity 0.3s ease-out"><div style="position:fixed;height:100vh;width:100vw;display:flex;justify-content:center;align-items:center"><div id="loadcontent" style="width:50vmin;height:50vmin;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px #a3ddfb;text-align:center"><div><h2>LOADING...</h2><p style="word-break:keep-all">加载过慢请开启缓存(浏览器默认开启)</p><div><img alt="loading" src="/loading.gif"></div></div></div></div></div>
+        <div id="layout">
+            <i data-fa-symbol="calendar-solid" class="fa-solid fa-calendar fa-fw"></i>
+            <i data-fa-symbol="bookmark-solid" class="fa-solid fa-bookmark fa-fw"></i>
+            <i data-fa-symbol="tags-solid" class="fa-solid fa-tags fa-fw"></i>
+            <transition name="into">
+                <div v-show="show_page" style="display: -not-none">
+                    <div id="menu_show">
+                         
+<nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">Hexo</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;about</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;tags</span>
+        </a>
+        
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
+    <div :class="'phone-menu ' + menu_show" id="phone-menu">
+        <div class="curtain" @click="menu_show = !menu_show" v-show="menu_show"></div>
+        <div :class="'title'" @click="menu_show = !menu_show">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;Hexo</span>
+        </div>
+        <transition name="slide">
+        <div class="items" v-show="menu_show">
+            
+            <a href="">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">home</div>
+                </div>
+            </a>
+            
+            <a href="about">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-id-card fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">about</div>
+                </div>
+            </a>
+            
+            <a href="archives">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-box-archive fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">archives</div>
+                </div>
+            </a>
+            
+            <a href="categories">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-bookmark fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">categories</div>
+                </div>
+            </a>
+            
+            <a href="tags">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">tags</div>
+                </div>
+            </a>
+            
+        </div>
+        </transition>
     </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main"><article id="post-笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/08/25/%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time class="dt-published" datetime="2022-08-25T05:23:41.506Z" itemprop="datePublished">2022-08-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="Vue基础命令"><a href="#Vue基础命令" class="headerlink" title="Vue基础命令"></a>Vue基础命令</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">初始化配置 npm i</span><br><span class="line">安装脚手架 npm install -g @vue/cli</span><br><span class="line">创建项目 vue create + name</span><br><span class="line">可视化创建 vue ui</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><h2 id="配置Axios"><a href="#配置Axios" class="headerlink" title="配置Axios"></a>配置Axios</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">npm i axios -D</span><br><span class="line">//引入axios</span><br><span class="line">import axios from &#x27;axios&#x27;</span><br><span class="line">//axios基础地址</span><br><span class="line">axios.defaults.baseURL = &#x27;http://127.0.0.1:8888/api/private/v1/&#x27;</span><br><span class="line">//拦截器添加token</span><br><span class="line">axios.interceptors.request.use(config =&gt; &#123;</span><br><span class="line">  // console.log(config);</span><br><span class="line">  config.headers.Authorization = window.sessionStorage.getItem(&#x27;token&#x27;)</span><br><span class="line">  return config</span><br><span class="line">&#125;)</span><br><span class="line">Vue.prototype.$http = axios</span><br></pre></td></tr></table></figure>
-
-<h2 id="配置ElementUI"><a href="#配置ElementUI" class="headerlink" title="配置ElementUI"></a>配置ElementUI</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm i element-ui -S</span><br><span class="line">//引入整个ElementUI</span><br><span class="line">import ElementUI from &#x27;element-ui&#x27;;</span><br><span class="line">import &#x27;element-ui/lib/theme-chalk/index.css&#x27;;</span><br></pre></td></tr></table></figure>
-
-
-
+</nav>
+                    </div>
+                    <div id="main">
+                        
+<div class="article">
+    <div>
+        <h1> </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2022/8/25
+        </span>
+        
+        
+    </div>
+    <div class="content" v-pre>
+        <h1 id="Vue基础命令"><a href="#Vue基础命令" class="headerlink" title="Vue基础命令"></a>Vue基础命令</h1><pre><code>初始化配置 npm i
+安装脚手架 npm install -g @vue/cli
+创建项目 vue create + name
+可视化创建 vue ui
+</code></pre>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><h2 id="配置Axios"><a href="#配置Axios" class="headerlink" title="配置Axios"></a>配置Axios</h2><pre><code>npm i axios -D
+//引入axios
+import axios from &#39;axios&#39;
+//axios基础地址
+axios.defaults.baseURL = &#39;http://127.0.0.1:8888/api/private/v1/&#39;
+//拦截器添加token
+axios.interceptors.request.use(config =&gt; &#123;
+  // console.log(config);
+  config.headers.Authorization = window.sessionStorage.getItem(&#39;token&#39;)
+  return config
+&#125;)
+Vue.prototype.$http = axios
+</code></pre>
+<h2 id="配置ElementUI"><a href="#配置ElementUI" class="headerlink" title="配置ElementUI"></a>配置ElementUI</h2><pre><code>npm i element-ui -S
+//引入整个ElementUI
+import ElementUI from &#39;element-ui&#39;;
+import &#39;element-ui/lib/theme-chalk/index.css&#39;;
+</code></pre>
 <h1 id="登录功能"><a href="#登录功能" class="headerlink" title="登录功能"></a>登录功能</h1><p>表单：</p>
 <p>1.数据绑定</p>
 <p>2.表单验证 :示例 </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">username: [&#123; required: true, message: &#x27;请输入登录名&#x27;, trigger: &#x27;blur&#x27; &#125;]</span><br></pre></td></tr></table></figure>
-
+<pre><code>username: [&#123; required: true, message: &#39;请输入登录名&#39;, trigger: &#39;blur&#39; &#125;]
+</code></pre>
 <p>3.重置表单</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">this.$refs.LoginFormRef.resetFields()</span><br></pre></td></tr></table></figure>
-
+<pre><code>this.$refs.LoginFormRef.resetFields()
+</code></pre>
 <p>4.点击登录</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//点击登录的时候先调用validate方法验证表单内容是否有误</span><br><span class="line">this.$refs.loginFormRef.validate(async (valid) =&gt; &#123;</span><br><span class="line">	if (!valid) return</span><br><span class="line">	const &#123; data: res &#125; = await this.$http.post(&#x27;login&#x27;, this.loginForm)</span><br><span class="line">	if (res.meta.status !== 200) return this.$message.err(&#x27;登录失败！&#x27;)</span><br><span class="line">	this.$message.success(&#x27;登录成功！&#x27;)</span><br><span class="line">	window.sessionStorage.setItem(&#x27;token&#x27;, res.data.token)</span><br><span class="line">	this.$router.push(&#x27;/home&#x27;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<pre><code>//点击登录的时候先调用validate方法验证表单内容是否有误
+this.$refs.loginFormRef.validate(async (valid) =&gt; &#123;
+    if (!valid) return
+    const &#123; data: res &#125; = await this.$http.post(&#39;login&#39;, this.loginForm)
+    if (res.meta.status !== 200) return this.$message.err(&#39;登录失败！&#39;)
+    this.$message.success(&#39;登录成功！&#39;)
+    window.sessionStorage.setItem(&#39;token&#39;, res.data.token)
+    this.$router.push(&#39;/home&#39;)
+&#125;)
+</code></pre>
+<h1 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h1><h2 id="路由规则"><a href="#路由规则" class="headerlink" title="路由规则"></a>路由规则</h2><pre><code>&#123; path:&#39;/&#39;, redirect:&#39;/login&#39;&#125;,
+&#123; path:&#39;/login&#39; , component:Login &#125;,
+&#123; path:&#39;/home&#39; , component:Home&#125;
+</code></pre>
+<h2 id="路由守卫"><a href="#路由守卫" class="headerlink" title="路由守卫"></a>路由守卫</h2><pre><code>//挂载路由导航守卫,to表示将要访问的路径，from表示从哪里来，next是下一个要做的操作
+router.beforeEach((to,from,next)=&gt;&#123; 
+  if(to.path === &#39;/login&#39;)
+    return next();
+  //获取token
+  const tokenStr = window.sessionStorage.getItem(&#39;token&#39;);
+  if(!tokenStr)
+    return next(&#39;/login&#39;);
+  next();
+&#125;)
+</code></pre>
 
-<h1 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h1><h2 id="路由规则"><a href="#路由规则" class="headerlink" title="路由规则"></a>路由规则</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123; path:&#x27;/&#x27;, redirect:&#x27;/login&#x27;&#125;,</span><br><span class="line">&#123; path:&#x27;/login&#x27; , component:Login &#125;,</span><br><span class="line">&#123; path:&#x27;/home&#x27; , component:Home&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="路由守卫"><a href="#路由守卫" class="headerlink" title="路由守卫"></a>路由守卫</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//挂载路由导航守卫,to表示将要访问的路径，from表示从哪里来，next是下一个要做的操作</span><br><span class="line">router.beforeEach((to,from,next)=&gt;&#123; </span><br><span class="line">  if(to.path === &#x27;/login&#x27;)</span><br><span class="line">    return next();</span><br><span class="line">  //获取token</span><br><span class="line">  const tokenStr = window.sessionStorage.getItem(&#x27;token&#x27;);</span><br><span class="line">  if(!tokenStr)</span><br><span class="line">    return next(&#x27;/login&#x27;);</span><br><span class="line">  next();</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/08/25/%E7%AC%94%E8%AE%B0/" data-id="cl78lntp60001p8fhgazqb5n7" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
     
-<nav id="article-nav">
-  
-  
-    <a href="/2022/08/25/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">我的第一篇博客文章</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-</section>
+</div>
+                         
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 20xx - 2022 Hexo
+            <span class="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            @John Doe
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo Engine</a> & <a
+                target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a></div>
         
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li></ul>
     </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/08/25/%E7%AC%94%E8%AE%B0/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/08/25/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
-          </li>
-        
-          <li>
-            <a href="/2022/08/25/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
 </footer>
+                    </div>
+                </div>
+            </transition>
+            <div id="img_show">
+                <img id="img_content" alt="img_show">
+            </div>
+        </div>
+        <script src="https://cdn.staticfile.org/highlight.js/11.5.1/highlight.min.js"></script>
+        <script src="/js/particlex.js"></script>
+        <script src="/js/showimg.js"></script>
+        
 
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
+    </body>
 </html>
