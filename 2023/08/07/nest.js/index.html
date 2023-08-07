@@ -1,0 +1,1228 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Hexo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Hexo</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>Contact</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			Contact
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2023-08-07
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="IOC控制反转-DI依赖注入"><a href="#IOC控制反转-DI依赖注入" class="headerlink" title="IOC控制反转|DI依赖注入"></a>IOC控制反转|DI依赖注入</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">class A &#123;</span><br><span class="line">  name: string</span><br><span class="line">  constructor(name: string) &#123;</span><br><span class="line">    this.name = name</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class C &#123;</span><br><span class="line">  name: string</span><br><span class="line">  constructor(name: string) &#123;</span><br><span class="line">    this.name = name</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Container &#123;</span><br><span class="line">  mo: any</span><br><span class="line">  constructor() &#123;</span><br><span class="line">    this.mo = &#123;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">  provide(key: string, mo: any) &#123;</span><br><span class="line">    this.mo[key] = mo</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  get(key: string) &#123;</span><br><span class="line">    return this.mo[key]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const mo = new Container()</span><br><span class="line">mo.provide(&#x27;a&#x27;, new A(&#x27;a&#x27;))</span><br><span class="line">mo.provide(&#x27;c&#x27;, new C(&#x27;c&#x27;))</span><br><span class="line"></span><br><span class="line">class B &#123;</span><br><span class="line">  a: any</span><br><span class="line">  c: any</span><br><span class="line">  constructor(mo: Container) &#123;</span><br><span class="line">    this.a = mo.get(&#x27;a&#x27;)</span><br><span class="line">    this.c = mo.get(&#x27;c&#x27;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">包含了三个类 A, C 和 B，以及一个 Container 类来实现依赖注入。在这个示例中，A 和 C 类表示两个简单的类，Container 类负责管理对象的依赖关系，并且 B 类依赖于 A 和 C 类。</span><br><span class="line"></span><br><span class="line">下面是你提供的代码的解释：</span><br><span class="line"></span><br><span class="line">A 类和 C 类：两个类都有一个 name 属性，并且在构造函数中接受一个 name 参数来初始化 name 属性。</span><br><span class="line"></span><br><span class="line">Container 类：这个类用来管理依赖注入。它有一个 mo 属性，用于存储被注入的对象。构造函数初始化了 mo 属性为空对象 &#123;&#125;。provide 方法用于向容器中提供对象，接受一个 key 参数作为对象的标识，以及一个 mo 参数作为要注入的对象。get 方法用于根据提供的 key 获取对应的对象。</span><br><span class="line"></span><br><span class="line">mo 对象：这是一个 Container 类的实例，用来管理对象的依赖关系。</span><br><span class="line"></span><br><span class="line">mo.provide(&#x27;a&#x27;, new A(&#x27;a&#x27;))：这行代码将一个新的 A 类的实例注入到容器中，并使用键 &#x27;a&#x27; 进行标识。</span><br><span class="line"></span><br><span class="line">mo.provide(&#x27;c&#x27;, new A(&#x27;c&#x27;))：这行代码将另一个新的 A 类的实例注入到容器中，并使用键 &#x27;c&#x27; 进行标识。</span><br><span class="line"></span><br><span class="line">B 类：这个类接受一个 Container 类的实例作为参数，并在构造函数中根据提供的 key 获取对应的对象，并将它们赋值给 a 和 c 属性。</span><br></pre></td></tr></table></figure>
+
+<h2 id="装饰器"><a href="#装饰器" class="headerlink" title="装饰器"></a>装饰器</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><span class="line">//类装饰器</span><br><span class="line">const doc: ClassDecorator = (target: any) =&gt; &#123;</span><br><span class="line">  console.log(target)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@doc	//将构造函数当作参数target传入doc中</span><br><span class="line">class Xiaoman &#123;</span><br><span class="line">  constructor() &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line">const xiaoman:any = new Xiaoman()</span><br><span class="line"></span><br><span class="line">console.log(xiaoman.name);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//属性装饰器</span><br><span class="line">const doc: PropertyDecorator = (target: any, key: string | symbol) =&gt; &#123;</span><br><span class="line">  console.log(target, key)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Xiaoman &#123;</span><br><span class="line">  @doc</span><br><span class="line">  public name: string</span><br><span class="line">  constructor() &#123;</span><br><span class="line">    this.name = &#x27;xiaoman&#x27;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//方法装饰器</span><br><span class="line">const doc: MethodDecorator = (target: any, key: string | symbol, descriptor: any) =&gt; &#123;</span><br><span class="line">  console.log(target, key, descriptor)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Xiaoman &#123;</span><br><span class="line">  public name: string</span><br><span class="line">  constructor() &#123;</span><br><span class="line">    this.name = &#x27;xiaoman&#x27;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  @doc</span><br><span class="line">  getName() &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//参数装饰器  参数所在位置</span><br><span class="line">const doc: ParameterDecorator = (target: any, key: string | symbol | undefined, index: any) =&gt; &#123;</span><br><span class="line">  console.log(target, key, index)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Xiaoman &#123;</span><br><span class="line">  public name: string</span><br><span class="line">  constructor() &#123;</span><br><span class="line">    this.name = &#x27;xiaoman&#x27;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  getName(name: string, @doc age: number) &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//不破坏原有的类，在类上添加属性</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//简单的发起请求</span><br><span class="line">import axios from &#x27;axios&#x27;</span><br><span class="line"></span><br><span class="line">const Get = (url: string) =&gt; &#123;</span><br><span class="line">  return (target: any, key: any, descriptor: PropertyDescriptor) =&gt; &#123;</span><br><span class="line">    const fnc = descriptor.value //原始方法</span><br><span class="line">    axios</span><br><span class="line">      .get(url)</span><br><span class="line">      .then(res =&gt; &#123;</span><br><span class="line">        fnc(res, &#123;</span><br><span class="line">          status: 200,</span><br><span class="line">          success: true</span><br><span class="line">        &#125;)</span><br><span class="line">      &#125;)</span><br><span class="line">      .catch(err =&gt; &#123;</span><br><span class="line">        fnc(err, &#123;</span><br><span class="line">          status: 500,</span><br><span class="line">          success: false</span><br><span class="line">        &#125;)</span><br><span class="line">      &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Container &#123;</span><br><span class="line">  constructor() &#123;&#125;</span><br><span class="line"></span><br><span class="line">  @Get(&#x27;https://api.apiopen.top/api/getHaoKanVideo?page=0&amp;size=10&#x27;)</span><br><span class="line">  getList(res: any, status: any) &#123;</span><br><span class="line">    console.log(res.data.result.list, status)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">这段代码是一个 TypeScript 类装饰器，用于对类方法进行装饰，实现在方法执行前发起 GET 请求，然后根据请求结果调用原始方法，并在请求成功或失败时，传递相应的参数给原始方法。</span><br><span class="line"></span><br><span class="line">解释如下：</span><br><span class="line"></span><br><span class="line">import axios from &#x27;axios&#x27;：引入 axios 库，用于发起 HTTP 请求。</span><br><span class="line"></span><br><span class="line">const Get = (url: string) =&gt; &#123; ... &#125;：这是一个装饰器工厂函数，接受一个 URL 参数，并返回一个装饰器函数。装饰器函数接受三个参数：target 表示类的原型对象，key 表示方法名，descriptor 表示方法的属性描述符。</span><br><span class="line"></span><br><span class="line">axios.get(url)...：在装饰器函数中，使用 axios 发起 GET 请求，请求的 URL 是传入装饰器的 URL 参数。</span><br><span class="line"></span><br><span class="line">.then(res =&gt; &#123; ... &#125;) 和 .catch(err =&gt; &#123; ... &#125;)：根据请求结果，处理成功和失败的情况。</span><br><span class="line"></span><br><span class="line">fnc(res, &#123; status: 200, success: true &#125;) 和 fnc(err, &#123; status: 500, success: false &#125;)：在请求成功或失败时，调用原始方法 fnc，并传递相应的参数给它。其中，res 表示请求成功的响应对象，err 表示请求失败的错误对象。第二个参数是一个包含状态信息的对象，用来表示请求的状态。</span><br><span class="line"></span><br><span class="line">class Container &#123; ... &#125;：这是一个示例类，表示一个容器类。在类中使用了装饰器 @Get(&#x27;https://api.apiopen.top/api/getHaoKanVideo?page=0&amp;size=10&#x27;) 来装饰 getList 方法。当调用 getList 方法时，装饰器会先发起 GET 请求，然后根据请求结果调用原始方法，并传递请求结果和状态信息给原始方法。</span><br><span class="line"></span><br><span class="line">getList(res: any, status: any) &#123; ... &#125;：这是 Container 类中的 getList 方法，用于处理请求成功后的响应数据和状态信息。在这个例子中，getList 方法只是简单地输出请求成功的响应数据和状态信息。</span><br><span class="line"></span><br><span class="line">总结：这段代码演示了如何使用 TypeScript 类装饰器来实现在方法执行前发起 GET 请求，并将请求结果和状态信息传递给原始方法。这种装饰器模式可以用于在方法执行前进行一些通用的操作，例如发起网络请求、记录日志等。</span><br></pre></td></tr></table></figure>
+
+<h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line">npm i -g @nestjs/cli</span><br><span class="line"></span><br><span class="line">nest new 项目名</span><br><span class="line"></span><br><span class="line">启动项目 我们需要热更新 就启动npm run start:dev就可以了</span><br><span class="line"></span><br><span class="line">    &quot;start&quot;: &quot;nest start&quot;,</span><br><span class="line">    &quot;start:dev&quot;: &quot;nest start --watch&quot;,</span><br><span class="line">    &quot;start:debug&quot;: &quot;nest start --debug --watch&quot;,</span><br><span class="line">    &quot;start:prod&quot;: &quot;node dist/main&quot;,</span><br><span class="line"></span><br><span class="line">目录介绍</span><br><span class="line">1.main.ts 入口文件主文件 类似于vue 的main.ts</span><br><span class="line"></span><br><span class="line">通过 NestFactory.create(AppModule) 创建一个app  就是类似于绑定一个根组件App.vue</span><br><span class="line"></span><br><span class="line"> app.listen(3000); 监听一个端口</span><br><span class="line"></span><br><span class="line">import &#123; NestFactory &#125; from &#x27;@nestjs/core&#x27;;</span><br><span class="line">import &#123; AppModule &#125; from &#x27;./app.module&#x27;;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">async function bootstrap() &#123;</span><br><span class="line">  const app = await NestFactory.create(AppModule);</span><br><span class="line">  await app.listen(3000);</span><br><span class="line">&#125;</span><br><span class="line">bootstrap();</span><br><span class="line"></span><br><span class="line">2.Controller.ts 控制器</span><br><span class="line"></span><br><span class="line">你可以理解成vue 的路由</span><br><span class="line"></span><br><span class="line">private readonly appService: AppService 这一行代码就是依赖注入不需要实例化  appService 它内部会自己实例化的我们主需要放上去就可以了</span><br><span class="line"></span><br><span class="line">import &#123; Controller, Get &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line">import &#123; AppService &#125; from &#x27;./app.service&#x27;;</span><br><span class="line"> </span><br><span class="line">@Controller()</span><br><span class="line">export class AppController &#123;</span><br><span class="line">  constructor(private readonly appService: AppService) &#123;&#125;</span><br><span class="line"> </span><br><span class="line">  @Get()</span><br><span class="line">  getHello(): string &#123;</span><br><span class="line">    return this.appService.getHello();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">//修改地址之后</span><br><span class="line"> </span><br><span class="line">import &#123; Controller, Get &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line">import &#123; AppService &#125; from &#x27;./app.service&#x27;;</span><br><span class="line"> </span><br><span class="line">@Controller(&#x27;/get&#x27;)</span><br><span class="line">export class AppController &#123;</span><br><span class="line">  constructor(private readonly appService: AppService) &#123;&#125;</span><br><span class="line"> </span><br><span class="line">  @Get(&#x27;/hello&#x27;)</span><br><span class="line">  getHello(): string &#123;</span><br><span class="line">    return this.appService.getHello();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"> 3.app.service.ts</span><br><span class="line"></span><br><span class="line">这个文件主要实现业务逻辑的 当然Controller可以实现逻辑，但是就是单一的无法复用，放到app.service有别的模块也需要就可以实现复用</span><br><span class="line"></span><br><span class="line">import &#123; Injectable &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line"> </span><br><span class="line">@Injectable()</span><br><span class="line">export class AppService &#123;</span><br><span class="line">  getHello(): string &#123;</span><br><span class="line">    return &#x27;Hello World!&#x27;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">nest --help 可以查看nestjs所有的命令</span><br><span class="line">他的命令和angular很像</span><br><span class="line"></span><br><span class="line">1.生成controller.ts</span><br><span class="line">nest g co user</span><br><span class="line"></span><br><span class="line">2.生成  module.ts</span><br><span class="line">nest g mo user</span><br><span class="line">3.生成service.ts</span><br><span class="line">nest g s user</span><br><span class="line"></span><br><span class="line">以上步骤一个一个生成的太慢了我们可以直接使用一个命令生成CURD</span><br><span class="line"> nest g resource xiaoman</span><br><span class="line"></span><br><span class="line"> 第一次使用这个命令的时候，除了生成文件之外还会自动使用 npm 帮我们更新资源，安装一些额外的插件，后续再次使用就不会更新了。</span><br><span class="line"></span><br><span class="line"> 生成了一套标准的CURD 模板</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="Restful风格"><a href="#Restful风格" class="headerlink" title="Restful风格"></a>Restful风格</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line">RESTful 是一种风格，在RESTful中，一切都被认为是资源，每个资源有对应的URL标识.</span><br><span class="line"></span><br><span class="line">不是标准也不是协议，只是一种风格。当然你也可以不按照他的风格去写。</span><br><span class="line"></span><br><span class="line">1.接口url</span><br><span class="line">传统接口</span><br><span class="line">http://localhost:8080/api/get_list?id=1</span><br><span class="line">http://localhost:8080/api/delete_list?id=1</span><br><span class="line">http://localhost:8080/api/update_list?id=1</span><br><span class="line"></span><br><span class="line">RESTful接口</span><br><span class="line">http://localhost:8080/api/get_list/1 查询 删除 更新</span><br><span class="line"></span><br><span class="line">RESTful 风格一个接口就会完成 增删改差 他是通过不同的请求方式来区分的</span><br><span class="line">查询GET</span><br><span class="line">提交POST</span><br><span class="line">更新 PUT PATCH</span><br><span class="line">删除 DELETE</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">2.RESTful 版本控制 </span><br><span class="line">一共有三种我们一般用第一种 更加语义化</span><br><span class="line"></span><br><span class="line">URI Versioning	版本将在请求的 URI 中传递（默认）</span><br><span class="line">Header Versioning	自定义请求标头将指定版本</span><br><span class="line">Media Type Versioning	请求的Accept标头将指定版本</span><br><span class="line">import &#123; NestFactory &#125; from &#x27;@nestjs/core&#x27;;</span><br><span class="line">import &#123; VersioningType &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line">import &#123; AppModule &#125; from &#x27;./app.module&#x27;;</span><br><span class="line"> </span><br><span class="line">async function bootstrap() &#123;</span><br><span class="line">  const app = await NestFactory.create(AppModule);</span><br><span class="line">  app.enableVersioning(&#123;</span><br><span class="line">    type: VersioningType.URI,</span><br><span class="line">  &#125;)</span><br><span class="line">  await app.listen(3000);</span><br><span class="line">&#125;</span><br><span class="line">bootstrap();</span><br><span class="line">然后在user.controller 配置版本</span><br><span class="line"></span><br><span class="line">Controller 变成一个对象 通过version 配置版本</span><br><span class="line"></span><br><span class="line">import &#123; Controller, Get, Post, Body, Patch, Param, Delete, Version &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line">import &#123; UserService &#125; from &#x27;./user.service&#x27;;</span><br><span class="line">import &#123; CreateUserDto &#125; from &#x27;./dto/create-user.dto&#x27;;</span><br><span class="line">import &#123; UpdateUserDto &#125; from &#x27;./dto/update-user.dto&#x27;;</span><br><span class="line"> </span><br><span class="line">@Controller(&#123;</span><br><span class="line">  path:&quot;user&quot;,</span><br><span class="line">  version:&#x27;1&#x27;</span><br><span class="line">&#125;)</span><br><span class="line">export class UserController &#123;</span><br><span class="line">  constructor(private readonly userService: UserService) &#123;&#125;</span><br><span class="line"> </span><br><span class="line">  @Post()</span><br><span class="line">  create(@Body() createUserDto: CreateUserDto) &#123;</span><br><span class="line">    return this.userService.create(createUserDto);</span><br><span class="line">  &#125;</span><br><span class="line"> </span><br><span class="line">  @Get()</span><br><span class="line">  // @Version(&#x27;1&#x27;)</span><br><span class="line">  findAll() &#123;</span><br><span class="line">    return this.userService.findAll();</span><br><span class="line">  &#125;</span><br><span class="line"> </span><br><span class="line">  @Get(&#x27;:id&#x27;)</span><br><span class="line">  findOne(@Param(&#x27;id&#x27;) id: string) &#123;</span><br><span class="line">    return this.userService.findOne(+id);</span><br><span class="line">  &#125;</span><br><span class="line"> </span><br><span class="line">  @Patch(&#x27;:id&#x27;)</span><br><span class="line">  update(@Param(&#x27;id&#x27;) id: string, @Body() updateUserDto: UpdateUserDto) &#123;</span><br><span class="line">    return this.userService.update(+id, updateUserDto);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> 3.Code码规范</span><br><span class="line">200 OK</span><br><span class="line">304 Not Modified 协商缓存了</span><br><span class="line">400 Bad Request 参数错误</span><br><span class="line">401 Unauthorized token错误</span><br><span class="line">403 Forbidden referer origin 验证失败</span><br><span class="line">404 Not Found 接口不存在</span><br><span class="line">500 Internal Server Error 服务端错误</span><br><span class="line">502 Bad Gateway 上游接口有问题或者服务器问题</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="控制器"><a href="#控制器" class="headerlink" title="控制器"></a>控制器</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">Controller Request （获取前端传过来的参数）</span><br><span class="line">nestjs 提供了方法参数装饰器 用来帮助我们快速获取参数 如下</span><br><span class="line"></span><br><span class="line">@Request()	req          </span><br><span class="line">@Response()	res                   </span><br><span class="line">@Next()	next</span><br><span class="line">@Session()	req.session</span><br><span class="line">@Param(key?: string)       	req.params/req.params[key]</span><br><span class="line">@Body(key?: string)	req.body/req.body[key]</span><br><span class="line">@Query(key?: string)	req.query/req.query[key]</span><br><span class="line">@Headers(name?: string)   	req.headers/req.headers[name]</span><br><span class="line">@HttpCode	</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">import &#123; Controller, Get, Post, Body, Patch, Param, Delete, Request, Headers, HttpCode, Query &#125; from &#x27;@nestjs/common&#x27;</span><br><span class="line">import &#123; UserService &#125; from &#x27;./user.service&#x27;</span><br><span class="line">import &#123; CreateUserDto &#125; from &#x27;./dto/create-user.dto&#x27;</span><br><span class="line">import &#123; UpdateUserDto &#125; from &#x27;./dto/update-user.dto&#x27;</span><br><span class="line"></span><br><span class="line">@Controller(&#x27;user&#x27;)</span><br><span class="line">export class UserController &#123;</span><br><span class="line">  constructor(private readonly userService: UserService) &#123;&#125;</span><br><span class="line"></span><br><span class="line">  @Get()</span><br><span class="line">  findAdd(@Query() query) &#123;</span><br><span class="line">    console.log(query)</span><br><span class="line"></span><br><span class="line">    return &#123;</span><br><span class="line">      code: 200,</span><br><span class="line">      message: query.name</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  @Post()</span><br><span class="line">  create(@Body(&#x27;age&#x27;) body) &#123;</span><br><span class="line">    console.log(body)</span><br><span class="line">    return &#123;</span><br><span class="line">      code: 200,</span><br><span class="line">      message: body</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  //动态参数</span><br><span class="line">  @Get(&#x27;:id&#x27;)</span><br><span class="line">  findId(@Param(&#x27;id&#x27;) params, @Headers() headers) &#123;</span><br><span class="line">    console.log(params)</span><br><span class="line">    console.log(headers)</span><br><span class="line">    return &#123;</span><br><span class="line">      code: 200,</span><br><span class="line">      message: params</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Session"><a href="#Session" class="headerlink" title="Session"></a>Session</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br></pre></td><td class="code"><pre><span class="line">session 是服务器 为每个用户的浏览器创建的一个会话对象 这个session 会记录到 浏览器的 cookie 用来区分用户</span><br><span class="line"></span><br><span class="line">我们使用的是nestjs 默认框架express 他也支持express 的插件 所以我们就可以安装express的session</span><br><span class="line"></span><br><span class="line">npm i express-session --save</span><br><span class="line">需要智能提示可以装一个声明依赖</span><br><span class="line"></span><br><span class="line">npm i @types/express-session -D</span><br><span class="line">然后在main.ts 引入 通过app.use 注册session</span><br><span class="line"></span><br><span class="line">import * as session from &#x27;express-session&#x27;</span><br><span class="line"></span><br><span class="line">app.use(session())</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">参数配置详解</span><br><span class="line">secret      生成服务端session 签名 可以理解为加盐</span><br><span class="line">name     	生成客户端cookie 的名字 默认 connect.sid</span><br><span class="line">cookie      设置返回到前端 key 的属性，默认值为&#123; path: ‘/’, httpOnly: 				true, secure: false, maxAge: null &#125;。</span><br><span class="line">rolling		在每次请求时强行设置 cookie，这将重置 cookie 过期时间(默			认:false)</span><br><span class="line"></span><br><span class="line">nestjs 配置</span><br><span class="line">import &#123; NestFactory &#125; from &#x27;@nestjs/core&#x27;;</span><br><span class="line">import &#123; VersioningType &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line">import &#123; AppModule &#125; from &#x27;./app.module&#x27;;</span><br><span class="line">import * as session from &#x27;express-session&#x27;</span><br><span class="line">async function bootstrap() &#123;</span><br><span class="line">  const app = await NestFactory.create(AppModule);</span><br><span class="line">  app.enableVersioning(&#123;</span><br><span class="line">    type: VersioningType.URI</span><br><span class="line">  &#125;)</span><br><span class="line">  app.use(session(&#123; secret: &quot;XiaoMan&quot;, name: &quot;xm.session&quot;, rolling: true, cookie: &#123; maxAge: null &#125; &#125;))</span><br><span class="line">  await app.listen(3000);</span><br><span class="line">&#125;</span><br><span class="line">bootstrap();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">验证码案例 </span><br><span class="line">前端 vue3 ts element-plus fetch</span><br><span class="line"></span><br><span class="line">安装element  </span><br><span class="line"></span><br><span class="line">npm install element-plus -S</span><br><span class="line">然后简单的绘制页面</span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">     &lt;div class=&quot;wraps&quot;&gt;</span><br><span class="line">          &lt;el-form :label-position=&quot;labelPosition&quot; label-width=&quot;100px&quot; :model=&quot;formLabelAlign&quot; style=&quot;max-width: 460px&quot;&gt;</span><br><span class="line">               &lt;el-form-item label=&quot;账号&quot;&gt;</span><br><span class="line">                    &lt;el-input v-model=&quot;formLabelAlign.name&quot; /&gt;</span><br><span class="line">               &lt;/el-form-item&gt;</span><br><span class="line">               &lt;el-form-item label=&quot;密码&quot;&gt;</span><br><span class="line">                    &lt;el-input type=&quot;password&quot; v-model=&quot;formLabelAlign.password&quot; /&gt;</span><br><span class="line">               &lt;/el-form-item&gt;</span><br><span class="line">               &lt;el-form-item label=&quot;验证码&quot;&gt;</span><br><span class="line">                    &lt;div style=&quot;display:flex&quot;&gt;</span><br><span class="line">                         &lt;el-input  v-model=&quot;formLabelAlign.code&quot; /&gt;</span><br><span class="line">                         &lt;img @click=&quot;resetCode&quot; :src=&quot;codeUrl&quot; alt=&quot;&quot;&gt;</span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line">               &lt;/el-form-item&gt;</span><br><span class="line">               &lt;el-form-item&gt;</span><br><span class="line">                    &lt;el-button @click=&quot;submit&quot;&gt;登录&lt;/el-button&gt;</span><br><span class="line">               &lt;/el-form-item&gt;</span><br><span class="line">          &lt;/el-form&gt;</span><br><span class="line">     &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">     </span><br><span class="line">&lt;script setup lang=&#x27;ts&#x27;&gt;</span><br><span class="line">import &#123; onMounted, reactive, ref &#125; from &#x27;vue&#x27;;</span><br><span class="line"> </span><br><span class="line">const codeUrl = ref&lt;string&gt;(&#x27;/api/user/code&#x27;)</span><br><span class="line"> </span><br><span class="line">const resetCode = () =&gt; codeUrl.value = codeUrl.value + &#x27;?&#x27; + Math.random()</span><br><span class="line"> </span><br><span class="line">const labelPosition = ref&lt;string&gt;(&#x27;right&#x27;)</span><br><span class="line"> </span><br><span class="line">const formLabelAlign = reactive(&#123;</span><br><span class="line">     name: &quot;&quot;,</span><br><span class="line">     password: &quot;&quot;,</span><br><span class="line">     code: &quot;&quot;</span><br><span class="line">&#125;)</span><br><span class="line"> </span><br><span class="line">const submit = async () =&gt; &#123;</span><br><span class="line">     await fetch(&#x27;/api/user/create&#x27;, &#123;</span><br><span class="line">          method: &quot;POST&quot;,</span><br><span class="line">          body: JSON.stringify(formLabelAlign),</span><br><span class="line">          headers: &#123;</span><br><span class="line">               &#x27;content-type&#x27;: &#x27;application/json&#x27;</span><br><span class="line">          &#125;</span><br><span class="line">     &#125;).then(res =&gt; res.json())</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">&lt;/script&gt;</span><br><span class="line">     </span><br><span class="line">&lt;style&gt;</span><br><span class="line">* &#123;</span><br><span class="line">     padding: 0;</span><br><span class="line">     margin: 0;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">.wraps &#123;</span><br><span class="line">     display: flex;</span><br><span class="line">     justify-content: center;</span><br><span class="line">     align-items: center;</span><br><span class="line">     height: inherit;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">html,</span><br><span class="line">body,</span><br><span class="line">#app &#123;</span><br><span class="line">     height: 100%;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> 我们可以看到  session 已经存到了浏览器</span><br><span class="line"></span><br><span class="line">跨域我用了本地dev 解决的</span><br><span class="line"></span><br><span class="line">    proxy:&#123;</span><br><span class="line">      &#x27;/api&#x27;:&#123;</span><br><span class="line">         target:&#x27;http://localhost:3000/&#x27;,</span><br><span class="line">         changeOrigin:true,</span><br><span class="line">         rewrite: path =&gt; path.replace(/^\/api/, &#x27;&#x27;),</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">后端nestjs  验证码插件 svgCaptcha</span><br><span class="line"></span><br><span class="line">npm install svg-captcha -S</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">import &#123; Controller, Get, Post, Body, Param, Request, Query, Headers, HttpCode, Res, Req &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line">import &#123; UserService &#125; from &#x27;./user.service&#x27;;</span><br><span class="line">import &#123; CreateUserDto &#125; from &#x27;./dto/create-user.dto&#x27;;</span><br><span class="line">import &#123; UpdateUserDto &#125; from &#x27;./dto/update-user.dto&#x27;;</span><br><span class="line">import * as svgCaptcha from &#x27;svg-captcha&#x27;;</span><br><span class="line">@Controller(&#x27;user&#x27;)</span><br><span class="line">export class UserController &#123;</span><br><span class="line">  constructor(private readonly userService: UserService) &#123; &#125;</span><br><span class="line">  @Get(&#x27;code&#x27;)</span><br><span class="line">  createCaptcha(@Req() req, @Res() res) &#123;</span><br><span class="line">    const captcha = svgCaptcha.create(&#123;</span><br><span class="line">      size: 4,//生成几个验证码</span><br><span class="line">      fontSize: 50, //文字大小</span><br><span class="line">      width: 100,  //宽度</span><br><span class="line">      height: 34,  //高度</span><br><span class="line">      background: &#x27;#cc9966&#x27;,  //背景颜色</span><br><span class="line">    &#125;)</span><br><span class="line">    req.session.code = captcha.text //存储验证码记录到session</span><br><span class="line">    res.type(&#x27;image/svg+xml&#x27;)</span><br><span class="line">    res.send(captcha.data)</span><br><span class="line">  &#125;</span><br><span class="line"> </span><br><span class="line">  @Post(&#x27;create&#x27;)</span><br><span class="line">  createUser(@Req() req, @Body() body) &#123;</span><br><span class="line">    console.log(req.session.code, body)</span><br><span class="line">    if (req.session.code.toLocaleLowerCase() === body?.code?.toLocaleLowerCase()) &#123;</span><br><span class="line">      return &#123;</span><br><span class="line">        message: &quot;验证码正确&quot;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      return &#123;</span><br><span class="line">        message: &quot;验证码错误&quot;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="服务类"><a href="#服务类" class="headerlink" title="服务类"></a>服务类</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br></pre></td><td class="code"><pre><span class="line">Providers</span><br><span class="line">Providers 是 Nest 的一个基本概念。许多基本的 Nest 类可能被视为 provider - service, repository, factory, helper 等等。 他们都可以通过 constructor 注入依赖关系。 这意味着对象可以彼此创建各种关系，并且“连接”对象实例的功能在很大程度上可以委托给 Nest运行时系统。 Provider 只是一个用 @Injectable() 装饰器注释的类。</span><br><span class="line"></span><br><span class="line">1.基本用法</span><br><span class="line">module 引入 service  在 providers 注入 </span><br><span class="line"></span><br><span class="line">在Controller 就可以使用注入好的service 了 </span><br><span class="line"></span><br><span class="line">2.service 第二种用法(自定义名称)</span><br><span class="line">第一种用法就是一个语法糖</span><br><span class="line"></span><br><span class="line">其实他的全称是这样的</span><br><span class="line"></span><br><span class="line">import &#123; Module &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line">import &#123; UserService &#125; from &#x27;./user.service&#x27;;</span><br><span class="line">import &#123; UserController &#125; from &#x27;./user.controller&#x27;;</span><br><span class="line"> </span><br><span class="line">@Module(&#123;</span><br><span class="line">  controllers: [UserController],</span><br><span class="line">  providers: [&#123;</span><br><span class="line">    provide: &quot;Xiaoman&quot;,</span><br><span class="line">    useClass: UserService</span><br><span class="line">  &#125;]</span><br><span class="line">&#125;)</span><br><span class="line">export class UserModule &#123; &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> 自定义名称之后 需要用对应的Inject 取 不然会找不到的</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">3.自定义注入值</span><br><span class="line">通过 useValue</span><br><span class="line"></span><br><span class="line">import &#123; Module &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line">import &#123; UserService &#125; from &#x27;./user.service&#x27;;</span><br><span class="line">import &#123; UserController &#125; from &#x27;./user.controller&#x27;;</span><br><span class="line"> </span><br><span class="line">@Module(&#123;</span><br><span class="line">  controllers: [UserController],</span><br><span class="line">  providers: [&#123;</span><br><span class="line">    provide: &quot;Xiaoman&quot;,</span><br><span class="line">    useClass: UserService</span><br><span class="line">  &#125;, &#123;</span><br><span class="line">    provide: &quot;JD&quot;,</span><br><span class="line">    useValue: [&#x27;TB&#x27;, &#x27;PDD&#x27;, &#x27;JD&#x27;]</span><br><span class="line">  &#125;]</span><br><span class="line">&#125;)</span><br><span class="line">export class UserModule &#123; &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">3.工厂模式</span><br><span class="line">如果服务 之间有相互的依赖 或者逻辑处理 可以使用 useFactory</span><br><span class="line"></span><br><span class="line">import &#123; Module &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line">import &#123; UserService &#125; from &#x27;./user.service&#x27;;</span><br><span class="line">import &#123; UserService2 &#125; from &#x27;./user.service2&#x27;;</span><br><span class="line">import &#123; UserService3 &#125; from &#x27;./user.service3&#x27;;</span><br><span class="line">import &#123; UserController &#125; from &#x27;./user.controller&#x27;;</span><br><span class="line"> </span><br><span class="line">@Module(&#123;</span><br><span class="line">  controllers: [UserController],</span><br><span class="line">  providers: [&#123;</span><br><span class="line">    provide: &quot;Xiaoman&quot;,</span><br><span class="line">    useClass: UserService</span><br><span class="line">  &#125;, &#123;</span><br><span class="line">    provide: &quot;JD&quot;,</span><br><span class="line">    useValue: [&#x27;TB&#x27;, &#x27;PDD&#x27;, &#x27;JD&#x27;]</span><br><span class="line">  &#125;,</span><br><span class="line">    UserService2,</span><br><span class="line">  &#123;</span><br><span class="line">    provide: &quot;Test&quot;,</span><br><span class="line">    inject: [UserService2],</span><br><span class="line">    useFactory(UserService2: UserService2) &#123;</span><br><span class="line">      return new UserService3(UserService2)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;)</span><br><span class="line">export class UserModule &#123; &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"> 4.异步模式</span><br><span class="line">useFactory 返回一个promise 或者其他异步操作</span><br><span class="line"></span><br><span class="line">import &#123; Module &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line">import &#123; UserService &#125; from &#x27;./user.service&#x27;;</span><br><span class="line">import &#123; UserService2 &#125; from &#x27;./user.service2&#x27;;</span><br><span class="line">import &#123; UserService3 &#125; from &#x27;./user.service3&#x27;;</span><br><span class="line">import &#123; UserController &#125; from &#x27;./user.controller&#x27;;</span><br><span class="line"> </span><br><span class="line">@Module(&#123;</span><br><span class="line">  controllers: [UserController],</span><br><span class="line">  providers: [&#123;</span><br><span class="line">    provide: &quot;Xiaoman&quot;,</span><br><span class="line">    useClass: UserService</span><br><span class="line">  &#125;, &#123;</span><br><span class="line">    provide: &quot;JD&quot;,</span><br><span class="line">    useValue: [&#x27;TB&#x27;, &#x27;PDD&#x27;, &#x27;JD&#x27;]</span><br><span class="line">  &#125;,</span><br><span class="line">    UserService2,</span><br><span class="line">  &#123;</span><br><span class="line">    provide: &quot;Test&quot;,</span><br><span class="line">    inject: [UserService2],</span><br><span class="line">    useFactory(UserService2: UserService2) &#123;</span><br><span class="line">      return new UserService3(UserService2)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    provide: &quot;sync&quot;,</span><br><span class="line">    async useFactory() &#123;</span><br><span class="line">      return await  new Promise((r) =&gt; &#123;</span><br><span class="line">        setTimeout(() =&gt; &#123;</span><br><span class="line">          r(&#x27;sync&#x27;)</span><br><span class="line">        &#125;, 3000)</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;)</span><br><span class="line">export class UserModule &#123; &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line">每个 Nest 应用程序至少有一个模块，即根模块。根模块是 Nest 开始安排应用程序树的地方。事实上，根模块可能是应用程序中唯一的模块，特别是当应用程序很小时，但是对于大型程序来说这是没有意义的。在大多数情况下，您将拥有多个模块，每个模块都有一组紧密相关的功能</span><br><span class="line"></span><br><span class="line">1.基本用法</span><br><span class="line">当我们使用nest g res user 创建一个CURD 模板的时候 nestjs 会自动帮我们引入模块</span><br><span class="line">@Module</span><br><span class="line"></span><br><span class="line">2.共享模块</span><br><span class="line">例如 user 的 Service 想暴露给 其他模块使用就可以使用exports 导出该服务</span><br><span class="line">@Module(&#123;</span><br><span class="line">  controllers: [UserController],</span><br><span class="line">  providers: [UserService],</span><br><span class="line">  exports: [UserService] //导出</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">由于App.modules 已经引入过该模块 就可以直接使用user 模块的 Service </span><br><span class="line">import &#123; UserService &#125; from &#x27;./user/user.service&#x27; 引入</span><br><span class="line"></span><br><span class="line">@Controller()</span><br><span class="line">export class AppController &#123;</span><br><span class="line">  constructor(</span><br><span class="line">  private readonly appService: AppService, </span><br><span class="line">  private readonly userService: UserService //添加</span><br><span class="line">  ) &#123;&#125;</span><br><span class="line"></span><br><span class="line">  @Get()</span><br><span class="line">  getHello(): string &#123;</span><br><span class="line">    return this.userService.findAll()//添加</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">3.全局模块</span><br><span class="line">@Global()</span><br><span class="line"></span><br><span class="line">我们给 user 模块添加 @Global() 他便注册为全局模块</span><br><span class="line"></span><br><span class="line">4.动态模块</span><br><span class="line">动态模块主要就是为了给模块传递参数 可以给该模块添加一个静态方法 用来接受参数</span><br><span class="line">import &#123; Module, DynamicModule, Global &#125; from &#x27;@nestjs/common&#x27;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">interface Options &#123;</span><br><span class="line">    path: string</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">@Global()</span><br><span class="line">@Module(&#123;</span><br><span class="line"> </span><br><span class="line">&#125;)</span><br><span class="line">export class ConfigModule &#123;</span><br><span class="line">    static forRoot(options: Options): DynamicModule &#123;</span><br><span class="line">        return &#123;</span><br><span class="line">            module: ConfigModule,</span><br><span class="line">            providers: [</span><br><span class="line">                &#123;</span><br><span class="line">                    provide: &quot;Config&quot;,</span><br><span class="line">                    useValue: &#123; baseApi: &quot;/api&quot; + options.path &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            ],</span><br><span class="line">            exports: [</span><br><span class="line">                &#123;</span><br><span class="line">                    provide: &quot;Config&quot;,</span><br><span class="line">                    useValue: &#123; baseApi: &quot;/api&quot; + options.path &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">模块处运用</span><br><span class="line">ConfigModule.forRoot(&#123; path: &#x27;/xmh&#x27; &#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="中间件"><a href="#中间件" class="headerlink" title="中间件"></a>中间件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br></pre></td><td class="code"><pre><span class="line">中间件是在路由处理程序 之前 调用的函数。 中间件函数可以访问请求和响应对象</span><br><span class="line"></span><br><span class="line">中间件函数可以执行以下任务:</span><br><span class="line"></span><br><span class="line">执行任何代码。</span><br><span class="line">对请求和响应对象进行更改。</span><br><span class="line">结束请求-响应周期。</span><br><span class="line">调用堆栈中的下一个中间件函数。</span><br><span class="line">如果当前的中间件函数没有结束请求-响应周期, 它必须调用 next() 将控制传递给下一个中间件函数。否则, 请求将被挂起。</span><br><span class="line"></span><br><span class="line">1.创建一个依赖注入中间件</span><br><span class="line">要求我们实现use 函数 返回 req res next 参数 如果不调用next 程序将被挂起</span><br><span class="line">import &#123;Injectable,NestMiddleware &#125; from &#x27;@nestjs/common&#x27;</span><br><span class="line">import &#123;Request,Response,NextFunction&#125; from &#x27;express&#x27;</span><br><span class="line">@Injectable()</span><br><span class="line">export class Logger implements NestMiddleware&#123;</span><br><span class="line">  use (req:Request,res:Response,next:NextFunction) &#123;</span><br><span class="line">    console.log(req)</span><br><span class="line">    next()</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">使用方法 在模块里面 实现 configure 返回一个消费者  consumer 通过 apply 注册中间件 通过forRoutes 指定  Controller 路由</span><br><span class="line">import &#123; Module,NestModule,MiddlewareConsumer &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line">import &#123; UserService &#125; from &#x27;./user.service&#x27;;</span><br><span class="line">import &#123; UserController &#125; from &#x27;./user.controller&#x27;;</span><br><span class="line">import &#123; Logger &#125; from &#x27;src/middleware&#x27;;</span><br><span class="line">@Module(&#123;</span><br><span class="line">  controllers: [UserController],</span><br><span class="line">  providers: [UserService],</span><br><span class="line">  exports:[UserService]</span><br><span class="line">&#125;)</span><br><span class="line">export class UserModule implements NestModule&#123;</span><br><span class="line">  configure (consumer:MiddlewareConsumer) &#123;</span><br><span class="line">    consumer.apply(Logger).forRoutes(&#x27;user&#x27;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">也可以指定 拦截的方法 比如拦截GET  POST 等 forRoutes 使用对象配置</span><br><span class="line">import &#123; Module,NestModule,MiddlewareConsumer,RequestMethod &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line">import &#123; UserService &#125; from &#x27;./user.service&#x27;;</span><br><span class="line">import &#123; UserController &#125; from &#x27;./user.controller&#x27;;</span><br><span class="line">import &#123; Logger &#125; from &#x27;src/middleware&#x27;;</span><br><span class="line">@Module(&#123;</span><br><span class="line">  controllers: [UserController],</span><br><span class="line">  providers: [UserService],</span><br><span class="line">  exports:[UserService]</span><br><span class="line">&#125;)</span><br><span class="line">export class UserModule implements NestModule&#123;</span><br><span class="line">  configure (consumer:MiddlewareConsumer) &#123;</span><br><span class="line">    consumer.apply(Logger).forRoutes(&#123;path:&#x27;user&#x27;,method:RequestMethod.GET&#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">你甚至可以直接吧 UserController 塞进去</span><br><span class="line">consumer.apply(Logger).forRoutes(UserController)</span><br><span class="line">拦截所有</span><br><span class="line"></span><br><span class="line">2.全局中间件</span><br><span class="line">注意全局中间件只能使用函数模式 案例可以做白名单拦截之类的</span><br><span class="line">import &#123; NestFactory &#125; from &#x27;@nestjs/core&#x27;;</span><br><span class="line">import &#123; AppModule &#125; from &#x27;./app.module&#x27;;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">const whiteList = [&#x27;/list&#x27;]</span><br><span class="line"> </span><br><span class="line">function middleWareAll  (req,res,next) &#123;</span><br><span class="line">   </span><br><span class="line">     console.log(req.originalUrl,&#x27;我收全局的&#x27;)</span><br><span class="line"> </span><br><span class="line">     if(whiteList.includes(req.originalUrl))&#123;</span><br><span class="line">         next()</span><br><span class="line">     &#125;else&#123;</span><br><span class="line">         res.send(&#x27;小黑子露出鸡脚了吧&#x27;)</span><br><span class="line">     &#125; </span><br><span class="line">&#125;</span><br><span class="line">async function bootstrap() &#123;</span><br><span class="line">  const app = await NestFactory.create(AppModule);</span><br><span class="line">  app.use(middleWareAll)</span><br><span class="line">  await app.listen(3000);</span><br><span class="line">&#125;</span><br><span class="line">bootstrap();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">3.接入第三方中间件 例如 cors 处理跨域</span><br><span class="line">npm install cors</span><br><span class="line"></span><br><span class="line">npm install @types/cors -D</span><br><span class="line"></span><br><span class="line">import &#123; NestFactory &#125; from &#x27;@nestjs/core&#x27;;</span><br><span class="line">import &#123; AppModule &#125; from &#x27;./app.module&#x27;;</span><br><span class="line">import * as cors from &#x27;cors&#x27;</span><br><span class="line"> </span><br><span class="line">const whiteList = [&#x27;/list&#x27;]</span><br><span class="line"> </span><br><span class="line">function middleWareAll  (req,res,next) &#123;</span><br><span class="line">   </span><br><span class="line">     console.log(req.originalUrl,&#x27;我收全局的&#x27;)</span><br><span class="line"> </span><br><span class="line">     if(whiteList.includes(req.originalUrl))&#123;</span><br><span class="line">         next()</span><br><span class="line">     &#125;else&#123;</span><br><span class="line">         res.send(&#123;code:200&#125;)</span><br><span class="line">     &#125;</span><br><span class="line"> </span><br><span class="line">     </span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">async function bootstrap() &#123;</span><br><span class="line">  const app = await NestFactory.create(AppModule);</span><br><span class="line">  app.use(cors())</span><br><span class="line">  app.use(middleWareAll)</span><br><span class="line">  await app.listen(3000);</span><br><span class="line">&#125;</span><br><span class="line">bootstrap();</span><br></pre></td></tr></table></figure>
+
+<h2 id="上传图片-静态目录"><a href="#上传图片-静态目录" class="headerlink" title="上传图片 静态目录"></a>上传图片 静态目录</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line">npm install multer -S</span><br><span class="line">npm install @types/multer -D</span><br><span class="line"></span><br><span class="line">nest g res upload</span><br><span class="line"></span><br><span class="line">1.在upload  Module 使用MulterModule register注册存放图片的目录</span><br><span class="line"></span><br><span class="line">需要用到  multer 的  diskStorage 设置存放目录 extname 用来读取文件后缀 filename给文件重新命名</span><br><span class="line">import &#123; Module &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line">import &#123; UploadService &#125; from &#x27;./upload.service&#x27;;</span><br><span class="line">import &#123; UploadController &#125; from &#x27;./upload.controller&#x27;;</span><br><span class="line">import &#123; MulterModule &#125; from &#x27;@nestjs/platform-express&#x27;</span><br><span class="line">import &#123;diskStorage&#125; from &#x27;multer&#x27;</span><br><span class="line">import &#123; extname,join &#125; from &#x27;path&#x27;;</span><br><span class="line">@Module(&#123;</span><br><span class="line">  imports: [MulterModule.register(&#123;</span><br><span class="line">     storage:diskStorage(&#123;</span><br><span class="line">        destination:join(__dirname,&quot;../images&quot;),</span><br><span class="line">        filename:(_,file,callback) =&gt; &#123;</span><br><span class="line">           const fileName = `$&#123;new Date().getTime() + extname(file.originalname)&#125;`</span><br><span class="line">           return callback(null,fileName)</span><br><span class="line">        &#125;</span><br><span class="line">     &#125;)</span><br><span class="line">  &#125;)],</span><br><span class="line">  controllers: [UploadController],</span><br><span class="line">  providers: [UploadService]</span><br><span class="line">&#125;)</span><br><span class="line">export class UploadModule &#123; &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">2.controller 使用</span><br><span class="line">使用 UseInterceptors 装饰器  FileInterceptor是单个 读取字段名称  FilesInterceptor是多个</span><br><span class="line"></span><br><span class="line">参数 使用 UploadedFile 装饰器接受file 文件</span><br><span class="line">import &#123; Controller, Get, Post, Body, Patch, Param, Delete,UseInterceptors,UploadedFile &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line">import &#123; UploadService &#125; from &#x27;./upload.service&#x27;;</span><br><span class="line">import &#123;FileInterceptor&#125; from &#x27;@nestjs/platform-express&#x27;</span><br><span class="line">@Controller(&#x27;upload&#x27;)</span><br><span class="line">export class UploadController &#123;</span><br><span class="line">  constructor(private readonly uploadService: UploadService) &#123;&#125;</span><br><span class="line">  @Post(&#x27;album&#x27;)</span><br><span class="line">  @UseInterceptors(FileInterceptor(&#x27;file&#x27;))</span><br><span class="line">  upload (@UploadedFile() file) &#123;</span><br><span class="line">    console.log(file)</span><br><span class="line">    return true</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">3.生成静态目录访问上传之后的图片</span><br><span class="line">useStaticAssets prefix 是虚拟前缀</span><br><span class="line"></span><br><span class="line">import &#123; NestFactory &#125; from &#x27;@nestjs/core&#x27;;</span><br><span class="line">import &#123; AppModule &#125; from &#x27;./app.module&#x27;;</span><br><span class="line">import &#123;NestExpressApplication&#125; from &#x27;@nestjs/platform-express&#x27;</span><br><span class="line">import &#123; join &#125; from &#x27;path&#x27;</span><br><span class="line">async function bootstrap() &#123;</span><br><span class="line">  const app = await NestFactory.create&lt;NestExpressApplication&gt;(AppModule);</span><br><span class="line">  app.useStaticAssets(join(__dirname,&#x27;images&#x27;),&#123;</span><br><span class="line">     prefix:&quot;/xiaoman&quot;</span><br><span class="line">  &#125;)</span><br><span class="line">  await app.listen(3000);</span><br><span class="line">&#125;</span><br><span class="line">bootstrap();</span><br></pre></td></tr></table></figure>
+
+<h2 id="下载文件-文件流"><a href="#下载文件-文件流" class="headerlink" title="下载文件 文件流"></a>下载文件 文件流</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">1.download 直接下载</span><br><span class="line">这个文件信息应该存数据库 我们这儿演示就写死 了</span><br><span class="line"></span><br><span class="line">import &#123; Controller, Post, UseInterceptors, UploadedFile, Get, Res &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line">import &#123; UploadService &#125; from &#x27;./upload.service&#x27;;</span><br><span class="line">import &#123; FileInterceptor, FilesInterceptor &#125; from &#x27;@nestjs/platform-express&#x27;</span><br><span class="line">import type &#123; Response &#125; from &#x27;express&#x27;</span><br><span class="line">import &#123;join&#125; from &#x27;path&#x27;</span><br><span class="line">@Controller(&#x27;upload&#x27;)</span><br><span class="line">export class UploadController &#123;</span><br><span class="line">  constructor(private readonly uploadService: UploadService) &#123; &#125;</span><br><span class="line">  @Post(&#x27;album&#x27;)</span><br><span class="line">  @UseInterceptors(FileInterceptor(&#x27;file&#x27;))</span><br><span class="line">  upload(@UploadedFile() file) &#123;</span><br><span class="line">    console.log(file, &#x27;file&#x27;)</span><br><span class="line">    return &#x27;峰峰35岁憋不住了&#x27;</span><br><span class="line">  &#125;</span><br><span class="line">  @Get(&#x27;export&#x27;)</span><br><span class="line">  downLoad(@Res() res: Response) &#123;</span><br><span class="line">    const url = join(__dirname,&#x27;../images/1662894316133.png&#x27;)</span><br><span class="line">    // res</span><br><span class="line">    // console.log(url)</span><br><span class="line">    res.download(url)</span><br><span class="line">    // return  true</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">2.使用文件流的方式下载</span><br><span class="line">可以使用compressing把他压缩成一个zip包</span><br><span class="line"></span><br><span class="line">npm install compressing</span><br><span class="line">import &#123;zip&#125; from &#x27;compressing&#x27;</span><br><span class="line">  @Get(&#x27;stream&#x27;)</span><br><span class="line">  async down (@Res() res:Response) &#123;</span><br><span class="line">    const url = join(__dirname,&#x27;../images/1662894316133.png&#x27;)</span><br><span class="line">    const tarStream  = new zip.Stream()</span><br><span class="line">    await tarStream.addEntry(url)</span><br><span class="line">    </span><br><span class="line">    res.setHeader(&#x27;Content-Type&#x27;, &#x27;application/octet-stream&#x27;);</span><br><span class="line">   </span><br><span class="line">    res.setHeader(</span><br><span class="line">      &#x27;Content-Disposition&#x27;,  </span><br><span class="line">      `attachment; filename=xiaoman`,</span><br><span class="line">    );</span><br><span class="line"> </span><br><span class="line">    tarStream.pipe(res)</span><br><span class="line"> </span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  前端接受流</span><br><span class="line">  const useFetch = async (url: string) =&gt; &#123;</span><br><span class="line">  const res = await fetch(url).then(res =&gt; res.arrayBuffer())</span><br><span class="line">  console.log(res)</span><br><span class="line">  const a = document.createElement(&#x27;a&#x27;)</span><br><span class="line">  a.href = URL.createObjectURL(new Blob([res],&#123;</span><br><span class="line">    // type:&quot;image/png&quot;</span><br><span class="line">  &#125;))</span><br><span class="line">  a.download = &#x27;xiaman.zip&#x27;</span><br><span class="line">  a.click()</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">const download = () =&gt; &#123;</span><br><span class="line">  useFetch(&#x27;http://localhost:3000/upload/stream&#x27;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="RxJs"><a href="#RxJs" class="headerlink" title="RxJs"></a>RxJs</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">RxJs 使用的是观察者模式，用来编写异步队列和事件处理。</span><br><span class="line"></span><br><span class="line">Observable 可观察的物件</span><br><span class="line"></span><br><span class="line">Subscription 监听Observable</span><br><span class="line"></span><br><span class="line">Operators 纯函数可以处理管道的数据 如 map filter concat reduce 等</span><br><span class="line"></span><br><span class="line">案例</span><br><span class="line">类似于迭代器 next 发出通知  complete通知完成</span><br><span class="line"></span><br><span class="line">subscribe 订阅  observable  发出的通知 也就是一个观察者</span><br><span class="line">import &#123; Observable &#125; from &quot;rxjs&quot;;</span><br><span class="line"> </span><br><span class="line">//类似于迭代器 next 发出通知  complete通知完成</span><br><span class="line">const observable = new Observable(subscriber=&gt;&#123;</span><br><span class="line">    subscriber.next(1)</span><br><span class="line">    subscriber.next(2)</span><br><span class="line">    subscriber.next(3)</span><br><span class="line"> </span><br><span class="line">    setTimeout(()=&gt;&#123;</span><br><span class="line">        subscriber.next(4)</span><br><span class="line">        subscriber.complete()</span><br><span class="line">    &#125;,1000)</span><br><span class="line">&#125;)</span><br><span class="line"> </span><br><span class="line">observable.subscribe(&#123;</span><br><span class="line">    next:(value)=&gt;&#123;</span><br><span class="line">       console.log(value)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">案例2</span><br><span class="line">interval 五百毫秒执行一次 pipe 就是管道的意思 管道里面也是可以去掉接口的支持处理异步数据 去处理数据 这儿展示 了 map  和 filter 跟数组的方法是一样的  最后 通过观察者  subscribe 接受回调</span><br><span class="line">import &#123; Observable, interval, take &#125; from &quot;rxjs&quot;;</span><br><span class="line">import &#123; map, filter,reduce,find,findIndex &#125; from &#x27;rxjs/operators&#x27;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">const subs = interval(500).pipe(map(v =&gt; (&#123; num: v &#125;)), filter(v =&gt; (v.num % 2 == 0))).subscribe((e) =&gt; &#123;</span><br><span class="line">    console.log(e)</span><br><span class="line">    if (e.num == 10) &#123;</span><br><span class="line">        subs.unsubscribe()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">案例3 </span><br><span class="line">Rxjs 也可以处理事件 不过我们在Nestjs 里面就不用操作DOM 了 你如果Angular 或则 Vue 框架看可以使用  fromEvent</span><br><span class="line">import &#123; Observable, interval, take,of,retry,fromEvent &#125; from &quot;rxjs&quot;;</span><br><span class="line">import &#123; map, filter,reduce,find,findIndex &#125; from &#x27;rxjs/operators&#x27;</span><br><span class="line"> </span><br><span class="line">const dom = fromEvent(document,&#x27;click&#x27;).pipe(map(e=&gt;e.target))</span><br><span class="line">dom.subscribe((e)=&gt;&#123;</span><br><span class="line"> </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="响应拦截器"><a href="#响应拦截器" class="headerlink" title="响应拦截器"></a>响应拦截器</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">拦截器具有一系列有用的功能，这些功能受面向切面编程（AOP）技术的启发。它们可以：</span><br><span class="line"></span><br><span class="line">在函数执行之前/之后绑定额外的逻辑</span><br><span class="line">转换从函数返回的结果</span><br><span class="line">转换从函数抛出的异常</span><br><span class="line">扩展基本函数行为</span><br><span class="line">根据所选条件完全重写函数 (例如, 缓存目的)</span><br><span class="line"></span><br><span class="line">给前端返回一个标准的json格式，给数据做一个全局format</span><br><span class="line">&#123;</span><br><span class="line">  data, //数据</span><br><span class="line">  status:0,</span><br><span class="line">  message:&quot;成功&quot;,</span><br><span class="line">  success:true</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">新建common 文件夹 创建 response.ts</span><br><span class="line">Nest Js 配合 Rxjs 格式化数据</span><br><span class="line">import &#123; Injectable, NestInterceptor, CallHandler &#125; from &#x27;@nestjs/common&#x27;</span><br><span class="line">import &#123; map &#125; from &#x27;rxjs/operators&#x27;</span><br><span class="line">import &#123;Observable&#125; from &#x27;rxjs&#x27;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">interface data&lt;T&gt;&#123;</span><br><span class="line">    data:T</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">@Injectable()</span><br><span class="line">export class Response&lt;T = any&gt; implements NestInterceptor &#123;</span><br><span class="line">    intercept(context, next: CallHandler):Observable&lt;data&lt;T&gt;&gt; &#123;</span><br><span class="line">        return next.handle().pipe(map(data =&gt; &#123;</span><br><span class="line">            return &#123;</span><br><span class="line">               data,</span><br><span class="line">               status:0,</span><br><span class="line">               success:true,</span><br><span class="line">               message:&quot;牛逼&quot;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;))</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">在main.ts 注册</span><br><span class="line">import &#123; Response &#125; from &#x27;./common/response&#x27;</span><br><span class="line">app.useGlobalInterceptors(new Response())</span><br></pre></td></tr></table></figure>
+
+<h2 id="异常拦截器"><a href="#异常拦截器" class="headerlink" title="异常拦截器"></a>异常拦截器</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">common下面新建filter.ts</span><br><span class="line">让我们创建一个异常过滤器，它负责捕获作为HttpException类实例的异常，并为它们设置自定义响应逻辑。为此，我们需要访问底层平台 Request和 Response。我们将访问Request对象，以便提取原始 url并将其包含在日志信息中。我们将使用 Response.json()方法，使用 Response对象直接控制发送的响应。</span><br><span class="line"> </span><br><span class="line">import &#123; ExceptionFilter, Catch, ArgumentsHost,HttpException &#125; from &#x27;@nestjs/common&#x27;</span><br><span class="line"> </span><br><span class="line">import &#123;Request,Response&#125; from &#x27;express&#x27;</span><br><span class="line"> </span><br><span class="line">@Catch(HttpException)</span><br><span class="line">export class HttpFilter implements ExceptionFilter &#123;</span><br><span class="line">    catch(exception:HttpException, host: ArgumentsHost) &#123;</span><br><span class="line">        const ctx = host.switchToHttp()</span><br><span class="line">        const request = ctx.getRequest&lt;Request&gt;()</span><br><span class="line">        const response = ctx.getResponse&lt;Response&gt;()</span><br><span class="line"> </span><br><span class="line">        const status = exception.getStatus()</span><br><span class="line"> </span><br><span class="line">        response.status(status).json(&#123;</span><br><span class="line">           data:exception,</span><br><span class="line">           time:new Date(),</span><br><span class="line">           success:false,</span><br><span class="line">           path:request.url,</span><br><span class="line">           status</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">注册全局异常过滤器</span><br><span class="line">import &#123; HttpFilter &#125; from &#x27;./common/filter&#x27;</span><br><span class="line">app.useGlobalFilters(new HttpFilter())</span><br></pre></td></tr></table></figure>
+
+<h2 id="管道转换"><a href="#管道转换" class="headerlink" title="管道转换"></a>管道转换</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">管道 可以做两件事</span><br><span class="line"></span><br><span class="line">1.转换，可以将前端传入的数据转成成我们需要的数据</span><br><span class="line">2.验证 类似于前端的rules 配置验证规则</span><br><span class="line"></span><br><span class="line">我们先来讲一下转换 Nestjs 提供了八个内置转换API</span><br><span class="line"></span><br><span class="line">ValidationPipe</span><br><span class="line">ParseIntPipe</span><br><span class="line">ParseFloatPipe</span><br><span class="line">ParseBoolPipe</span><br><span class="line">ParseArrayPipe</span><br><span class="line">ParseUUIDPipe</span><br><span class="line">ParseEnumPipe</span><br><span class="line">DefaultValuePipe</span><br><span class="line"></span><br><span class="line">案例1 我们接受的动态参数希望是一个number 类型 现在是string </span><br><span class="line">这时候就可以通过内置的管道 去做转换</span><br><span class="line">import &#123;ParseIntPipe&#125; from &#x27;&#x27; 先引入</span><br><span class="line">findOne(@Param(&#x27;id&#x27;, ParseIntPipe) id: number) &#123;</span><br><span class="line"></span><br><span class="line">案例2 验证UUID</span><br><span class="line">安装uuid</span><br><span class="line">npm install uuid -S</span><br><span class="line">npm install @types/uuid -D</span><br><span class="line">import * as uuid from &#x27;uuid&#x27;</span><br><span class="line">console.log(uuid.v4())</span><br><span class="line">生成一个uuid</span><br></pre></td></tr></table></figure>
+
+<h2 id="管道验证DTO"><a href="#管道验证DTO" class="headerlink" title="管道验证DTO"></a>管道验证DTO</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line">1.先创建一个pipe 验证管道</span><br><span class="line">nest g pi 文件名字</span><br><span class="line"></span><br><span class="line">2.安装验证器</span><br><span class="line">npm i --save class-validator class-transformer</span><br><span class="line">import &#123;IsNotEmpty,IsString&#125; from &#x27;class-validator&#x27;</span><br><span class="line">export class CreatePDto &#123;</span><br><span class="line">    @IsNotEmpty()//验证是否为空</span><br><span class="line">    @IsString() //是否为字符串</span><br><span class="line">    name:string;</span><br><span class="line"> </span><br><span class="line">    @IsNotEmpty()</span><br><span class="line">    age:number</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">3.controller 使用管道 和定义类型</span><br><span class="line">import &#123; LoginPipe &#125; from &#x27;./login.pipe&#x27;</span><br><span class="line">@Post() //携带在Body中</span><br><span class="line">  create(@Body(LoginPipe) createLoginDto: CreateLoginDto) &#123;</span><br><span class="line">    return this.loginService.create(createLoginDto)</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">4.实现验证transform</span><br><span class="line">value 就是 前端传过来的数据 metaData 就是元数据 通过 metatype 可以去实例化这个类</span><br><span class="line">实例化DTO</span><br><span class="line">通过 validate 验证 DTO 返回一个promise 的错误信息 如果有错误抛出</span><br><span class="line">import &#123; ArgumentMetadata, Injectable, PipeTransform, HttpException, HttpStatus &#125; from &#x27;@nestjs/common&#x27;</span><br><span class="line">import &#123; plainToInstance &#125; from &#x27;class-transformer&#x27;</span><br><span class="line">import &#123; validate &#125; from &#x27;class-validator&#x27;</span><br><span class="line">@Injectable()</span><br><span class="line">export class LoginPipe implements PipeTransform &#123;</span><br><span class="line">  async transform(value: any, metadata: ArgumentMetadata) &#123;</span><br><span class="line">    // console.log(value, metadata)</span><br><span class="line">    const DTO = plainToInstance(metadata.metatype, value)</span><br><span class="line">    const errors = await validate(DTO)</span><br><span class="line">    if (errors.length) &#123;</span><br><span class="line">      throw new HttpException(errors, HttpStatus.BAD_REQUEST)</span><br><span class="line">    &#125;</span><br><span class="line">    console.log(errors)</span><br><span class="line"></span><br><span class="line">    return value</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">5.注册全局DTO验证管道 </span><br><span class="line">只需要在dto文件中写校验规则</span><br><span class="line">import &#123; IsNotEmpty, IsString, Length, IsNumber &#125; from &#x27;class-validator&#x27;</span><br><span class="line"></span><br><span class="line">export class CreateLoginDto &#123;</span><br><span class="line">  @IsNotEmpty()</span><br><span class="line">  @IsString()</span><br><span class="line">  @Length(2, 10, &#123;</span><br><span class="line">    message: &#x27;名字长度必须在2到10之间&#x27;</span><br><span class="line">  &#125;)</span><br><span class="line">  name: string</span><br><span class="line"></span><br><span class="line">  @IsNumber()</span><br><span class="line">  age: number</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">main.ts全局注入</span><br><span class="line">import &#123; ValidationPipe &#125; from &#x27;@nestjs/common&#x27;</span><br><span class="line">app.useGlobalPipes(new ValidationPipe())</span><br></pre></td></tr></table></figure>
+
+<h2 id="守卫"><a href="#守卫" class="headerlink" title="守卫"></a>守卫</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">守卫有一个单独的责任。它们根据运行时出现的某些条件（例如权限，角色，访问控制列表等）来确定给定的请求是否由路由处理程序处理。这通常称为授权。在传统的 Express 应用程序中，通常由中间件处理授权(以及认证)。中间件是身份验证的良好选择，因为诸如 token 验证或添加属性到 request 对象上与特定路由(及其元数据)没有强关联。</span><br><span class="line">tips 守卫在每个中间件之后执行，但在任何拦截器或管道之前执行。</span><br><span class="line"></span><br><span class="line">创建一个守卫 </span><br><span class="line">nest g gu [name]</span><br><span class="line">守卫要求实现函数  给定参数context执行上下文 要求返回布尔值</span><br><span class="line"></span><br><span class="line">Controller 使用守卫</span><br><span class="line"> 使用UseGuards  控制守卫</span><br><span class="line"> import &#123; RoleGuard &#125; from &#x27;./role/role.guard&#x27;</span><br><span class="line"> @UseGuards(RoleGuard)</span><br><span class="line"> </span><br><span class="line">全局守卫</span><br><span class="line">import &#123; RoleGuard &#125; from &#x27;./role/role.guard&#x27;</span><br><span class="line">app.useGlobalGuards(new RoleGuard())</span><br><span class="line"></span><br><span class="line">针对角色控制守卫</span><br><span class="line">SetMetadata 装饰器</span><br><span class="line"></span><br><span class="line">@SetMetadata(&#x27;role&#x27;,[&#x27;admin&#x27;]) //有admin权限才允许访问接口</span><br><span class="line"></span><br><span class="line">第一个参数为key，第二个参数自定义我们的例子是数组存放的权限</span><br><span class="line"> guard  使用  Reflector 反射读取 setMetaData的值 去做判断这边例子是从url 判断有没有admin权限</span><br><span class="line"> import &#123; CanActivate, ExecutionContext, Injectable &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line">import &#123; Observable &#125; from &#x27;rxjs&#x27;;</span><br><span class="line">import &#123; Reflector &#125; from &#x27;@nestjs/core&#x27;</span><br><span class="line">import type &#123; Request &#125; from &#x27;express&#x27;</span><br><span class="line">@Injectable()</span><br><span class="line">export class RoleGuard implements CanActivate &#123;</span><br><span class="line">  constructor(private Reflector: Reflector) &#123; &#125;</span><br><span class="line">  canActivate(</span><br><span class="line">    context: ExecutionContext,</span><br><span class="line">  ): boolean | Promise&lt;boolean&gt; | Observable&lt;boolean&gt; &#123;</span><br><span class="line">    const admin = this.Reflector.get&lt;string[]&gt;(&#x27;role&#x27;, context.getHandler())</span><br><span class="line">    const request = context.switchToHttp().getRequest&lt;Request&gt;()</span><br><span class="line">    if (admin.includes(request.query.role as string)) &#123;</span><br><span class="line">      return true;</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">      return false</span><br><span class="line">    &#125;</span><br><span class="line">   </span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="自定义装饰器"><a href="#自定义装饰器" class="headerlink" title="自定义装饰器"></a>自定义装饰器</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">案例1 自定义权限装饰器</span><br><span class="line">生成装饰器 </span><br><span class="line"></span><br><span class="line">nest g d [name]</span><br><span class="line">import &#123; SetMetadata &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line"> </span><br><span class="line">export const Role = (role: string[]) =&gt; &#123;</span><br><span class="line">    console.log(role,1)</span><br><span class="line">    return SetMetadata(&#x27;role&#x27;, role);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">案例2 自定义参数装饰器返回一个url</span><br><span class="line">import &#123; SetMetadata,createParamDecorator,ExecutionContext ,applyDecorators &#125; from &#x27;@nestjs/common&#x27;;</span><br><span class="line">import type &#123;Request&#125; from &#x27;express&#x27;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">export const ReqUrl = createParamDecorator((data:string,ctx:ExecutionContext)=&gt;&#123;</span><br><span class="line">    const req = ctx.switchToHttp().getRequest&lt;Request&gt;()</span><br><span class="line">    return req.url</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">@Get()</span><br><span class="line">  @Role(&#x27;admin&#x27;)</span><br><span class="line">  findAll(@ReqUrl(&#x27;123&#x27;) url: string) &#123;</span><br><span class="line">    console.log(url)</span><br><span class="line"></span><br><span class="line">    return this.guardService.findAll()</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="swagger接口文档"><a href="#swagger接口文档" class="headerlink" title="swagger接口文档"></a>swagger接口文档</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">npm install  @nestjs/swagger swagger-ui-express</span><br><span class="line"></span><br><span class="line">在main.ts引入</span><br><span class="line">import &#123; SwaggerModule, DocumentBuilder &#125; from &#x27;@nestjs/swagger&#x27;</span><br><span class="line"></span><br><span class="line">const options = new DocumentBuilder().setTitle(&#x27;老许&#x27;).setDescription(&#x27;老许的接口文档&#x27;).setVersion(&#x27;1.0&#x27;).build()</span><br><span class="line">  const document = SwaggerModule.createDocument(app, options)</span><br><span class="line">  SwaggerModule.setup(&#x27;/api-docs&#x27;, app, document)</span><br><span class="line"></span><br><span class="line">可以使用ApiTags 添加分组</span><br><span class="line">import &#123; ApiTags &#125; from &#x27;@nestjs/swagger&#x27;</span><br><span class="line">@ApiTags(&#x27;守卫接口&#x27;)</span><br><span class="line"></span><br><span class="line">ApiOperation 接口描述</span><br><span class="line">  @ApiOperation(&#123;summary:&quot;测试admin&quot;,description:&quot;请求该接口需要amdin权限&quot;&#125;)</span><br><span class="line">  </span><br><span class="line">ApiParam 动态参数描述</span><br><span class="line">@ApiParam(&#123;name:&quot;id&quot;,description:&quot;用户id&quot;,required:true&#125;)</span><br><span class="line"></span><br><span class="line">ApiQuery 修饰get</span><br><span class="line"> @ApiQuery(&#123;name:&quot;xxxx&quot;,description:&quot;bbb&quot;&#125;)</span><br><span class="line"> </span><br><span class="line">ApiProperty 定义Post</span><br><span class="line">import &#123; ApiProperty &#125; from &quot;@nestjs/swagger&quot;</span><br><span class="line"> </span><br><span class="line">export class CreateGuardDto &#123;</span><br><span class="line">    @ApiProperty(&#123; description: &quot;姓名&quot;, example: &quot;小满&quot; &#125;)</span><br><span class="line">    name: string</span><br><span class="line">    @ApiProperty(&#123; description:&quot;年龄&quot;&#125;)</span><br><span class="line">    age: number</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ApiResponse 自定义返回信息</span><br><span class="line">@ApiResponse(&#123;status:403,description:&quot;自定义返回信息&quot;&#125;)</span><br><span class="line"></span><br><span class="line">ApiBearerAuth  jwt token</span><br><span class="line"> main.ts 增加 addBearerAuth()</span><br><span class="line"> const options = new DocumentBuilder().addBearerAuth()</span><br><span class="line"> 控制器前加@ApiBearerAuth()</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+
+<h2 id="连接数据库"><a href="#连接数据库" class="headerlink" title="连接数据库"></a>连接数据库</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">安装依赖</span><br><span class="line">npm install --save @nestjs/typeorm typeorm mysql2</span><br><span class="line"></span><br><span class="line">在app.module.ts 注册 </span><br><span class="line">import &#123; TypeOrmModule &#125; from &#x27;@nestjs/typeorm&#x27;</span><br><span class="line">imports中加入</span><br><span class="line">TypeOrmModule.forRoot(&#123;</span><br><span class="line">      type: &quot;mysql&quot;, //数据库类型</span><br><span class="line">      username: &quot;root&quot;, //账号</span><br><span class="line">      password: &quot;123456&quot;, //密码</span><br><span class="line">      host: &quot;localhost&quot;, //host</span><br><span class="line">      port: 3306, //</span><br><span class="line">      database: &quot;portal&quot;, //库名</span><br><span class="line">      entities: [__dirname + &#x27;/**/*.entity&#123;.ts,.js&#125;&#x27;], //实体文件</span><br><span class="line">      synchronize:true, //synchronize字段代表是否自动将实体类同步到数据库</span><br><span class="line">      retryDelay:500, //重试连接数据库间隔</span><br><span class="line">      retryAttempts:10,//重试连接数据库的次数</span><br><span class="line">      autoLoadEntities:true, //如果为true,将自动加载实体 forFeature()方法注册的每个实体都将自动添加到配置对象的实体数组中</span><br><span class="line">    &#125;),</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">定义实体</span><br><span class="line">import &#123;Entity,Column,PrimaryGeneratedColumn&#125; from &#x27;typeorm&#x27;</span><br><span class="line">@Entity()</span><br><span class="line">export class Guard &#123;</span><br><span class="line">   //自增列</span><br><span class="line">   @PrimaryGeneratedColumn()</span><br><span class="line">   id:number</span><br><span class="line">   //普通列</span><br><span class="line">   @Column()</span><br><span class="line">   name:string</span><br><span class="line">&#125;</span><br><span class="line">关联实体 module中</span><br><span class="line">import &#123; Test &#125; from &#x27;./entities/test.entity&#x27;</span><br><span class="line">import &#123; TypeOrmModule &#125; from &#x27;@nestjs/typeorm&#x27;</span><br><span class="line"></span><br><span class="line">imports: [TypeOrmModule.forFeature([Test])],</span><br></pre></td></tr></table></figure>
+
+<h2 id="实体"><a href="#实体" class="headerlink" title="实体"></a>实体</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br></pre></td><td class="code"><pre><span class="line">实体是一个映射到数据库表的类。 你可以通过定义一个新类来创建一个实体，并用@Entity()来标记：</span><br><span class="line">import &#123;Entity,Column,PrimaryGeneratedColumn&#125; from &#x27;typeorm&#x27;</span><br><span class="line"> </span><br><span class="line">@Entity()</span><br><span class="line">export class Test &#123;</span><br><span class="line">    @PrimaryGeneratedColumn()</span><br><span class="line">    id:number</span><br><span class="line">    </span><br><span class="line">    @Column()</span><br><span class="line">    name:string</span><br><span class="line"> </span><br><span class="line">    @Column()</span><br><span class="line">    password:string</span><br><span class="line"> </span><br><span class="line">    @Column()</span><br><span class="line">    age:number</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">主列</span><br><span class="line">自动递增的主键</span><br><span class="line"></span><br><span class="line">@PrimaryGeneratedColumn()</span><br><span class="line">id:number</span><br><span class="line"></span><br><span class="line">自动递增uuid</span><br><span class="line">@PrimaryGeneratedColumn(&quot;uuid&quot;)</span><br><span class="line">id:number</span><br><span class="line"></span><br><span class="line">列类型</span><br><span class="line">    @Column(&#123;type:&quot;varchar&quot;,length:200&#125;)</span><br><span class="line">    password: string</span><br><span class="line"> </span><br><span class="line">    @Column(&#123; type: &quot;int&quot;&#125;)</span><br><span class="line">    age: number</span><br><span class="line"> </span><br><span class="line">    @CreateDateColumn(&#123;type:&quot;timestamp&quot;&#125;)</span><br><span class="line">    create_time:Date</span><br><span class="line">    </span><br><span class="line">自动生成列</span><br><span class="line">@Generated(&#x27;uuid&#x27;)</span><br><span class="line">uuid:string</span><br><span class="line"></span><br><span class="line">枚举列</span><br><span class="line">  @Column(&#123;</span><br><span class="line">    type:&quot;enum&quot;,</span><br><span class="line">    enum:[&#x27;1&#x27;,&#x27;2&#x27;,&#x27;3&#x27;,&#x27;4&#x27;],</span><br><span class="line">    default:&#x27;1&#x27;</span><br><span class="line">  &#125;)</span><br><span class="line">  xx:string</span><br><span class="line">  </span><br><span class="line">列选项</span><br><span class="line">@Column(&#123;</span><br><span class="line">        type:&quot;varchar&quot;,</span><br><span class="line">        name:&quot;ipaaa&quot;, //数据库表中的列名</span><br><span class="line">        nullable:true, //在数据库中使列NULL或NOT NULL。 默认情况下，列是nullable：false</span><br><span class="line">        comment:&quot;注释&quot;,</span><br><span class="line">        select:true,  //定义在进行查询时是否默认隐藏此列。 设置为false时，列数据不会显示标准查询。 默认情况下，列是select：true</span><br><span class="line">        default:&quot;xxxx&quot;, //加数据库级列的DEFAULT值</span><br><span class="line">        primary:false, //将列标记为主要列。 使用方式和@ PrimaryColumn相同。</span><br><span class="line">        update:true, //指示&quot;save&quot;操作是否更新列值。如果为false，则只能在第一次插入对象时编写该值。 默认值为&quot;true&quot;</span><br><span class="line">        collation:&quot;&quot;, //定义列排序规则。</span><br><span class="line">    &#125;)</span><br><span class="line">    ip:string</span><br><span class="line">ColumnOptions中可用选项列表：</span><br><span class="line"></span><br><span class="line">type: ColumnType - 列类型。其中之一在上面.</span><br><span class="line">name: string - 数据库表中的列名。</span><br><span class="line">默认情况下，列名称是从属性的名称生成的。 你也可以通过指定自己的名称来更改它。</span><br><span class="line"></span><br><span class="line">length: number - 列类型的长度。 例如，如果要创建varchar（150）类型，请指定列类型和长度选项。</span><br><span class="line">width: number - 列类型的显示范围。 仅用于MySQL integer types(opens new window)</span><br><span class="line">onUpdate: string - ON UPDATE触发器。 仅用于 MySQL (opens new window).</span><br><span class="line">nullable: boolean - 在数据库中使列NULL或NOT NULL。 默认情况下，列是nullable：false。</span><br><span class="line">update: boolean - 指示&quot;save&quot;操作是否更新列值。如果为false，则只能在第一次插入对象时编写该值。 默认值为&quot;true&quot;。</span><br><span class="line">select: boolean - 定义在进行查询时是否默认隐藏此列。 设置为false时，列数据不会显示标准查询。 默认情况下，列是select：true</span><br><span class="line">default: string - 添加数据库级列的DEFAULT值。</span><br><span class="line">primary: boolean - 将列标记为主要列。 使用方式和@ PrimaryColumn相同。</span><br><span class="line">unique: boolean - 将列标记为唯一列（创建唯一约束）。</span><br><span class="line">comment: string - 数据库列备注，并非所有数据库类型都支持。</span><br><span class="line">precision: number - 十进制（精确数字）列的精度（仅适用于十进制列），这是为值存储的最大位数。仅用于某些列类型。</span><br><span class="line">scale: number - 十进制（精确数字）列的比例（仅适用于十进制列），表示小数点右侧的位数，且不得大于精度。 仅用于某些列类型。</span><br><span class="line">zerofill: boolean - 将ZEROFILL属性设置为数字列。 仅在 MySQL 中使用。 如果是true，MySQL 会自动将UNSIGNED属性添加到此列。</span><br><span class="line">unsigned: boolean - 将UNSIGNED属性设置为数字列。 仅在 MySQL 中使用。</span><br><span class="line">charset: string - 定义列字符集。 并非所有数据库类型都支持。</span><br><span class="line">collation: string - 定义列排序规则。</span><br><span class="line">enum: string[]|AnyEnum - 在enum列类型中使用，以指定允许的枚举值列表。 你也可以指定数组或指定枚举类。</span><br><span class="line">asExpression: string - 生成的列表达式。 仅在MySQL (opens new window)中使用。</span><br><span class="line">generatedType: &quot;VIRTUAL&quot;|&quot;STORED&quot; - 生成的列类型。 仅在MySQL (opens new window)中使用。</span><br><span class="line">hstoreType: &quot;object&quot;|&quot;string&quot; -返回HSTORE列类型。 以字符串或对象的形式返回值。 仅在Postgres中使用。</span><br><span class="line">array: boolean - 用于可以是数组的 postgres 列类型（例如 int []）</span><br><span class="line">transformer: &#123; from(value: DatabaseType): EntityType, to(value: EntityType): DatabaseType &#125; - 用于将任意类型EntityType的属性编组为数据库支持的类型DatabaseType。</span><br><span class="line"></span><br><span class="line">simple-array 列类型</span><br><span class="line">有一种称为simple-array的特殊列类型，它可以将原始数组值存储在单个字符串列中。 所有值都以逗号分隔</span><br><span class="line"></span><br><span class="line">@Entity()</span><br><span class="line">export class User &#123;</span><br><span class="line">    @PrimaryGeneratedColumn()</span><br><span class="line">    id: number;</span><br><span class="line"> </span><br><span class="line">    @Column(&quot;simple-array&quot;)</span><br><span class="line">    names: string[];</span><br><span class="line">&#125;</span><br><span class="line">simple-json列类型</span><br><span class="line">还有一个名为simple-json的特殊列类型，它可以存储任何可以通过 JSON.stringify 存储在数据库中的值。 当你的数据库中没有 json 类型而你又想存储和加载对象，该类型就很有用了。 例如:</span><br><span class="line"></span><br><span class="line">@Entity()</span><br><span class="line">export class User &#123;</span><br><span class="line">    @PrimaryGeneratedColumn()</span><br><span class="line">    id: number;</span><br><span class="line"> </span><br><span class="line">    @Column(&quot;simple-json&quot;)</span><br><span class="line">    profile: &#123; name: string; nickname: string &#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">John Doe</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2023/08/07/nest.js/">http://example.com/2023/08/07/nest.js/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint polocy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">John Doe</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2023/08/07/Node.js%E7%AC%94%E8%AE%B0/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-08-07
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            John Doe
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/08/07/JS%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-07
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            John Doe
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2023</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">John Doe</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
