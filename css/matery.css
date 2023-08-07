@@ -291,6 +291,7 @@ header nav .brand-span {
 }
 
 header .brand-logo .logo-img {
+    width: 45px;
     height: 45px;
     vertical-align: middle;
     border-radius: 50%;
