@@ -386,9 +386,16 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    function updateBgimage(){
+    // 每5s切换 banner 图.  Switch banner image every day.
+        var bannerUrl = "/medias/banner/" + new Date().getDate() + '.jpg';
+        $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    }
+    // 初始加载一次背景图片
+    updateBackgroundImage();
+
+    // 每5秒更新一次背景图片
+    setInterval(updateBgimage, 5000);
 </script>
 
 
